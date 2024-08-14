@@ -46,7 +46,7 @@ async def add_process_time_header(request: Request):
 
 @app.get("/")
 async def home():
-    return {"messages": "Hellos, Worlds!"}
+    return {"messages": "Hello, Worlds!"}
 
 @app.post("/adduser")
 async def add_user(request:UserSchema, db: Session = Depends(get_db)):
