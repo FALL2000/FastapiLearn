@@ -1,9 +1,8 @@
 from pydantic import BaseModel
 
-class UserSchema(BaseModel):
-    name:str
-    email:str
-    nickname:str
+class ItemSchema(BaseModel):
+    title:str
+    description:str
 
     class Config:
         from_attributes = True
